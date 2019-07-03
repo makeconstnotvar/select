@@ -25,7 +25,7 @@ class City {
   @action getCities(searchText){
     provider.getCities(searchText).then(cities =>{
       this.items = cities;
-    });
+    }).catch(()=>null);
 
   }
 }
